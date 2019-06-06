@@ -1,31 +1,30 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
----
+# Open door
 
-# svelte app
+PWA for open door with you mobile with Homey
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+Buildt with Svelte 3
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+## Installing / configuring
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+(Set up Homey as described in my blogpost)[https://medium.com/@itrond/unlock-your-door-with-you-phone-eadda0d9e068]
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+Adjust ```.example.env``` accordingly to you Homey setup. Rename it to ```.env```
+
+Your variables will be substitued in source code in the build process.
 
 
-## Get started
+## Run on dev machine 
 
 Install the dependencies...
 
 ```bash
-cd svelte-app
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
+
+
+...
 
 ```bash
 npm run dev
@@ -50,19 +49,3 @@ Then, from within your project folder:
 now
 ```
 
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
-```
